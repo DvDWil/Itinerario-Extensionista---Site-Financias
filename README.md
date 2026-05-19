@@ -71,7 +71,7 @@ Projeto desenvolvido por:
 - Carlos Eduardo  
 - Gustavo Saud  
 - Luis Filipe  
-- Livia Cordeiro  
+- Livya Carneiro
 - Leonardo  
 - Fernanda Anacledo  
 - Isabely Rodrigues
