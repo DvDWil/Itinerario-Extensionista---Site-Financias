@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>5 Passos para Sair das Dívidas — FinançasClaras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+    <style>
+        :root {
+            --esmeralda: #10B981;
+            --esmeralda-dark: #059669;
+            --esmeralda-deeper: #047857;
+            --esmeralda-light: #6EE7B7;
+            --grafite: #1A1A2E;
+            --grafite-mid: #252540;
+            --grafite-light: #2E2E50;
+            --branco: #FFFFFF;
+            --texto: #E5E7EB;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background-color: var(--grafite);
+            color: var(--texto);
+        }
+        h1,h2,h3,h4,h5,.navbar-brand { font-family: 'Plus Jakarta Sans', sans-serif; }
+
+        /* NAVBAR */
+        .navbar {
+            background: rgba(26,26,46,0.95) !important;
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(16,185,129,0.15);
+            padding: 1rem 0;
+        }
+        .navbar-brand { font-size:1.4rem; font-weight:800; color:var(--branco) !important; }
+        .navbar-brand span { color:var(--esmeralda); }
+        .nav-link { color:rgba(255,255,255,0.6) !important; transition:color .2s; }
+        .nav-link:hover { color:var(--esmeralda) !important; }
+
+        /* HERO DO ARTIGO */
+        .article-hero {
+            background: linear-gradient(160deg, #0F172A 0%, #1A1A2E 100%);
+            border-bottom: 1px solid rgba(16,185,129,0.1);
+            padding: 8rem 0 4rem;
+        }
+        .article-crumbs a { color:rgba(255,255,255,.4); text-decoration:none; font-size:.82rem; }
+        .article-crumbs a:hover { color:var(--esmeralda); }
+        .article-crumbs span { color:rgba(255,255,255,.2); margin:0 .5rem; }
+        .article-tag {
+            display:inline-block;
+            background:rgba(16,185,129,.15);
+            color:var(--esmeralda-light);
+            border-radius:100px;
+            padding:.3rem .9rem;
+            font-size:.75rem;
+            font-weight:700;
+            letter-spacing:.5px;
+            text-transform:uppercase;
+        }
+        .article-hero h1 {
+            font-size:clamp(2rem,5vw,3.2rem);
+            font-weight:800;
+            color:var(--branco);
+            letter-spacing:-1px;
+            line-height:1.15;
+        }
+        .article-hero .lead { color:rgba(255,255,255,.5); font-weight:300; }
+        .author-row { display:flex; align-items:center; gap:1rem; padding-top:1.5rem; border-top:1px solid rgba(255,255,255,.07); }
+        .author-avatar-lg {
+            width:44px; height:44px; border-radius:50%;
+            background:linear-gradient(135deg,var(--esmeralda),var(--esmeralda-deeper));
+            display:flex; align-items:center; justify-content:center;
+            font-weight:800; color:white; font-size:1rem; flex-shrink:0;
+        }
+        .author-name { font-weight:700; color:var(--branco); font-size:.9rem; }
+        .author-meta { font-size:.78rem; color:rgba(255,255,255,.35); }
+
+        /* ARTICLE BODY */
+        .article-section { padding:5rem 0; }
+        .article-cover {
+            width:100%; border-radius:16px;
+            background:linear-gradient(135deg,var(--grafite-light),var(--grafite-mid));
+            height:340px; display:flex; align-items:center; justify-content:center;
+            font-size:5rem; margin-bottom:3rem;
+            border:1px solid rgba(16,185,129,.1);
+        }
+        .article-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 16px;
+        }
+        .article-body p { font-size:1.05rem; line-height:1.85; color:rgba(255,255,255,.7); margin-bottom:1.25rem; }
+        .step-block {
+            background:var(--grafite-mid);
+            border:1px solid rgba(255,255,255,.06);
+            border-radius:16px;
+            padding:2rem;
+            margin:2.5rem 0;
+            position:relative;
+        }
+        .step-block::before {
+            content:'';
+            position:absolute; top:0; left:0; bottom:0;
+            width:4px; background:linear-gradient(to bottom,var(--esmeralda),var(--esmeralda-deeper));
+            border-radius:16px 0 0 16px;
+        }
+        .step-num-inline {
+            display:inline-flex; align-items:center; justify-content:center;
+            width:36px; height:36px; border-radius:10px;
+            background:linear-gradient(135deg,var(--esmeralda),var(--esmeralda-deeper));
+            color:white; font-weight:800; font-size:.9rem;
+            margin-bottom:1rem; font-family:'Syne',sans-serif;
+        }
+        .step-block h2 { color:var(--branco); font-size:1.3rem; font-weight:700; margin-bottom:.75rem; }
+        .step-block p, .step-block li { color:rgba(255,255,255,.6); font-size:.95rem; line-height:1.7; }
+        .step-block ul, .step-block ol { padding-left:1.25rem; }
+        .step-block li { margin-bottom:.5rem; }
+        .step-block strong { color:var(--esmeralda-light); }
+        .highlight-box {
+            background:rgba(16,185,129,.08);
+            border:1px solid rgba(16,185,129,.2);
+            border-radius:12px; padding:1.25rem 1.5rem; margin:1rem 0;
+        }
+        .highlight-box p { color:rgba(255,255,255,.65); margin:0; font-size:.9rem; }
+
+        /* SIDEBAR */
+        .sidebar-sticky { position:sticky; top:6rem; }
+        .sidebar-card {
+            background:var(--grafite-mid);
+            border:1px solid rgba(255,255,255,.06);
+            border-radius:16px; padding:1.5rem;
+            margin-bottom:1.5rem;
+        }
+        .sidebar-card h6 { color:var(--esmeralda-light); font-size:.75rem; letter-spacing:1px; text-transform:uppercase; font-weight:700; margin-bottom:1rem; }
+        .toc-item { display:block; color:rgba(255,255,255,.5); text-decoration:none; font-size:.85rem; padding:.5rem 0; border-bottom:1px solid rgba(255,255,255,.05); transition:color .2s; }
+        .toc-item:last-child { border-bottom:none; }
+        .toc-item:hover { color:var(--esmeralda); }
+        .toc-num { color:var(--esmeralda); font-weight:700; margin-right:.5rem; font-size:.8rem; }
+        .related-post { display:flex; gap:.75rem; align-items:flex-start; padding:.75rem 0; border-bottom:1px solid rgba(255,255,255,.05); }
+        .related-post:last-child { border-bottom:none; }
+        .related-icon { width:44px; height:44px; border-radius:10px; background:var(--grafite-light); display:flex; align-items:center; justify-content:center; font-size:1.2rem; flex-shrink:0; }
+        .related-post a { color:rgba(255,255,255,.7); text-decoration:none; font-size:.85rem; font-weight:600; transition:color .2s; line-height:1.3; }
+        .related-post a:hover { color:var(--esmeralda); }
+        .related-post .small { color:rgba(255,255,255,.3); font-size:.75rem; }
+
+        /* COMMENTS */
+        .comments-section { margin-top:3rem; }
+        .comment-card {
+            background:var(--grafite-mid);
+            border:1px solid rgba(255,255,255,.06);
+            border-radius:16px; padding:1.5rem; margin-bottom:1rem;
+        }
+        .comment-author { font-weight:700; color:var(--branco); font-size:.9rem; }
+        .comment-date { color:rgba(255,255,255,.3); font-size:.75rem; }
+        .comment-text { color:rgba(255,255,255,.55); font-size:.88rem; margin-top:.5rem; }
+        .reply-card {
+            background:var(--grafite-light);
+            border-radius:12px; padding:1.25rem; margin-top:.75rem;
+            border-left:3px solid rgba(16,185,129,.3);
+        }
+        .comment-input {
+            background:var(--grafite-light);
+            border:1px solid rgba(255,255,255,.08);
+            border-radius:12px; color:var(--branco);
+            padding:.9rem 1.1rem; width:100%; font-size:.9rem;
+            font-family:'DM Sans',sans-serif;
+            resize:vertical; transition:border-color .2s;
+        }
+        .comment-input:focus { outline:none; border-color:var(--esmeralda); box-shadow:0 0 0 3px rgba(16,185,129,.1); }
+        .comment-input::placeholder { color:rgba(255,255,255,.2); }
+        .btn-comment {
+            background:linear-gradient(135deg,var(--esmeralda),var(--esmeralda-deeper));
+            border:none; color:white; border-radius:10px;
+            padding:.7rem 1.5rem; font-weight:700; font-family:'Syne',sans-serif;
+            cursor:pointer; transition:all .2s;
+        }
+        .btn-comment:hover { transform:translateY(-1px); box-shadow:0 4px 15px rgba(16,185,129,.3); }
+
+        /* FOOTER */
+        footer { background:#0D0D1A; border-top:1px solid rgba(255,255,255,.06); padding:2rem 0; }
+        footer a { color:rgba(255,255,255,.3); text-decoration:none; transition:color .2s; }
+        footer a:hover { color:var(--esmeralda); }
+
+        /* scrollbar */
+        ::-webkit-scrollbar { width:6px; }
+        ::-webkit-scrollbar-track { background:var(--grafite); }
+        ::-webkit-scrollbar-thumb { background:rgba(16,185,129,.3); border-radius:3px; }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Finanças<span>Claras</span></a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html#guia">Guia</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#investimentos">Investimentos</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#calculadoras">Calculadoras</a></li>
+                <li class="nav-item"><a class="nav-link active" href="index.html#blog">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ARTICLE HERO -->
+<div class="article-hero">
+    <div class="container">
+        <div class="article-crumbs mb-4">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <a href="index.html#blog">Blog</a>
+            <span>/</span>
+            <span style="color:rgba(255,255,255,.5);">5 Passos para Sair das Dívidas</span>
+        </div>
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="mb-3">
+                    <span class="article-tag me-2">Iniciante</span>
+                    <span class="article-tag">Educação Financeira</span>
+                </div>
+                <h1>Construindo Segurança</h1>
+                <p class="lead mt-3">Você já conseguiu equilibrar suas contas — isso é uma grande conquista. Mas ainda falta um passo essencial para ter tranquilidade de verdade: construir um <strong>colchão financeiro</strong>.</p>
+                <div class="author-row mt-4">
+                    <div class="author-avatar-lg">D</div>
+                    <div>
+                        <div class="author-name">DvD</div>
+                        <div class="author-meta">17 de Maio, 2026 · 6 min de leitura · <i class="bi bi-eye"></i> 1.2k visualizações</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ARTICLE CONTENT -->
+<section class="article-section">
+    <div class="container">
+        <div class="row g-5">
+            <!-- MAIN CONTENT -->
+            <div class="col-lg-8">
+                <div class="article-cover">
+                <img src="./images/DividasBlog.png" alt="💳">
+                </div>
+
+                <div class="article-body">
+                    <p>A verdade é simples: imprevistos acontecem. Pode ser um problema de saúde, um gasto inesperado ou até um período sem renda. E quando você não está preparado, qualquer situação vira um estresse enorme — às vezes até dívida.</p>
+                </div>
+
+                <div class="step-block">
+                    <div class="step-num-inline">01</div>
+                    <h2>O que é um colchão financeiro?</h2>
+                    <p>É uma reserva de dinheiro guardada exclusivamente para emergências. Não é para comprar algo novo, viajar ou aproveitar promoções — é para momentos em que você realmente precisa.</p>
+                    <p>Pensa nele como um <strong>“escudo”</strong> que protege sua estabilidade.</p>
+
+                </div>
+
+                <div class="step-block">
+                    <div class="step-num-inline">02</div>
+                    <h2>Quanto guardar?</h2>
+                    <p>O ideal é ter entre 3 a 6 meses do seu custo de vida.</p>
+                    <p>Exemplo:</p>
+                    <ol>
+                        <li>Se você gasta <strong>R$2.000</strong> por mês</li>
+                        <li>Sua reserva ideal fica entre <strong>$6.000 e R$12.000</strong></li>
+                    </ol>
+                    <div class="highlight-box">
+                        <p>Se parecer muito, não desanima — ninguém constrói isso do dia pra noite.</p>
+                    </div>
+                </div>
+
+                <div class="step-block">
+                    <div class="step-num-inline">03</div>
+                    <h2>Como começar na prática?</h2>
+                    <p>O mais importante aqui é <strong>começar</strong>, mesmo que seja com pouco.</p>
+                    <ul>
+                        <li>Guarde uma quantia fixa todo mês</li>
+                        <li>Trate isso como uma conta obrigatória</li>
+                        <li>Se possível, automatize (pra não depender da vontade)</li>
+                        <li>Evite mexer nesse dinheiro sem necessidade</li>
+                    </ul>
+                    <div class="highlight-box">
+                        <p>Consistência ganha de valor alto. Guardar R$50 todo mês é melhor do que tentar guardar R$500 uma vez e parar.</p>
+                    </div>
+                </div>
+
+                <div class="step-block">
+                    <div class="step-num-inline">04</div>
+                    <h2>Dicas importantes</h2>
+                    <ul>
+                        <li>Deixe esse dinheiro em um lugar seguro e fácil de acessar</li>
+                        <li>Evite investimentos arriscados — o foco aqui não é lucro, é segurança</li>
+                        <li>Separe essa reserva do seu dinheiro do dia a dia</li>
+                    </ul>
+                </div>
+
+                <!-- COMMENTS -->
+<div class="comments-section">
+    <h4 class="mb-4" style="color:var(--branco);">Discussão <span style="color:rgba(255,255,255,.3);font-size:.85rem;font-weight:400;">(3 comentários)</span></h4>
+
+    <textarea class="comment-input mb-3" rows="3" placeholder="Junte-se à discussão e deixe um comentário!"></textarea>
+    <button class="btn-comment mb-4">Publicar comentário <i class="bi bi-send ms-1"></i></button>
+
+    <div class="comment-card">
+        <div class="d-flex align-items-center gap-2 mb-2">
+            <div style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#6366F1,#8B5CF6);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:.85rem;">J</div>
+            <div>
+                <div class="comment-author">João Pedro</div>
+                <div class="comment-date">15 de Mai, 2026</div>
+            </div>
+        </div>
+        <div class="comment-text">
+            Sempre achei que reserva de emergência era coisa pra quem ganhava muito. Mas depois de ler isso, comecei com R$100 esse mês. Não é muito, mas já dá uma sensação boa de estar construindo algo.
+        </div>
+
+        <div class="reply-card">
+            <div class="d-flex align-items-center gap-2 mb-2">
+                <div style="width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,var(--esmeralda),var(--esmeralda-deeper));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:.75rem;">L</div>
+                <div><div class="comment-author" style="font-size:.85rem;">Larissa Mendes</div></div>
+            </div>
+            <div class="comment-text">
+                João, foi exatamente assim comigo! Comecei guardando pouco também, mas o mais importante é criar o hábito. Depois você nem sente mais.
+            </div>
+        </div>
+
+        <div class="reply-card">
+            <div class="d-flex align-items-center gap-2 mb-2">
+                <div style="width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#F59E0B,#D97706);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:.75rem;">T</div>
+                <div><div class="comment-author" style="font-size:.85rem;">Thiago Ribeiro</div></div>
+            </div>
+            <div class="comment-text">
+                Isso aí. O mais importante é consistência. Não precisa ser muito, mas tem que ser sempre.
+            </div>
+        </div>
+    </div>
+
+    <div class="comment-card">
+        <div class="d-flex align-items-center gap-2 mb-2">
+            <div style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#EC4899,#BE185D);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:.85rem;">F</div>
+            <div>
+                <div class="comment-author">Fernanda Alves</div>
+                <div class="comment-date">16 de Mai, 2026</div>
+            </div>
+        </div>
+        <div class="comment-text">
+            Depois que montei minha reserva de emergência, minha ansiedade com dinheiro caiu muito. Antes qualquer imprevisto virava um problema gigante. Hoje tenho muito mais tranquilidade.
+        </div>
+    </div>
+</div>
+</div>
+            <!-- SIDEBAR -->
+            <div class="col-lg-4">
+                <div class="sidebar-sticky">
+                    <div class="sidebar-card">
+                        <h6>Índice do Artigo</h6>
+                        <a href="#" class="toc-item"><span class="toc-num">01</span> Mapeamento Real</a>
+                        <a href="#" class="toc-item"><span class="toc-num">02</span> Ordem de Prioridade</a>
+                        <a href="#" class="toc-item"><span class="toc-num">03</span> Corte o Supérfluo</a>
+                        <a href="#" class="toc-item"><span class="toc-num">04</span> Negocie com Credores</a>
+                        <a href="#" class="toc-item"><span class="toc-num">05</span> Proteja o Próximo Mês</a>
+                    </div>
+                    <div class="sidebar-card">
+                        <h6>Artigos Relacionados</h6>
+                        <div class="related-post">
+                            <div class="related-icon">🐷</div>
+                            <div>
+                                <a href="#">Poupança vs. Tesouro Selic vs. CDB</a>
+                                <div class="small mt-1">4 min · Reserva de Emergência</div>
+                            </div>
+                        </div>
+                        <div class="related-post">
+                            <div class="related-icon">🏢</div>
+                            <div>
+                                <a href="#">Aluguéis Sem Ter um Imóvel: FIIs</a>
+                                <div class="small mt-1">10 min · Investimento</div>
+                            </div>
+                        </div>
+                        <div class="related-post">
+                            <div class="related-icon">📊</div>
+                            <div>
+                                <a href="#">Como montar sua carteira do zero</a>
+                                <div class="small mt-1">8 min · Iniciante</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-card" style="background:linear-gradient(135deg,rgba(16,185,129,.15),rgba(16,185,129,.05));border-color:rgba(16,185,129,.2);">
+                        <h6>Calculadora de Reserva</h6>
+                        <p style="color:rgba(255,255,255,.5);font-size:.85rem;margin-bottom:1rem;">Descubra quanto você precisa guardar de reserva de emergência.</p>
+                        <a href="index.html#calculadoras" class="btn-comment d-block text-center text-decoration-none" style="border-radius:10px;padding:.7rem;">Acessar calculadora →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-auto">
+                <span class="fw-bold text-white" style="font-family:'Syne',sans-serif;">Finanças<span style="color:var(--esmeralda);">Claras</span></span>
+                <span class="small ms-3" style="color:rgba(255,255,255,.3);">© 2026</span>
+            </div>
+            <div class="col-auto">
+                <a href="#" class="me-3 small">Privacidade</a>
+                <a href="#" class="me-3 small">Termos</a>
+                <a href="#" class="small">Contato</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

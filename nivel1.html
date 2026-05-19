@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>5 Passos para Sair das Dívidas — FinançasClaras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+    <style>
+        :root {
+            --esmeralda: #10B981;
+            --esmeralda-dark: #059669;
+            --esmeralda-deeper: #047857;
+            --esmeralda-light: #6EE7B7;
+            --grafite: #1A1A2E;
+            --grafite-mid: #252540;
+            --grafite-light: #2E2E50;
+            --branco: #FFFFFF;
+            --texto: #E5E7EB;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background-color: var(--grafite);
+            color: var(--texto);
+        }
+        h1,h2,h3,h4,h5,.navbar-brand { font-family: 'Plus Jakarta Sans', sans-serif; }
+
+        /* NAVBAR */
+        .navbar {
+            background: rgba(26,26,46,0.95) !important;
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(16,185,129,0.15);
+            padding: 1rem 0;
+        }
+        .navbar-brand { font-size:1.4rem; font-weight:800; color:var(--branco) !important; }
+        .navbar-brand span { color:var(--esmeralda); }
+        .nav-link { color:rgba(255,255,255,0.6) !important; transition:color .2s; }
+        .nav-link:hover { color:var(--esmeralda) !important; }
+
+        /* HERO DO ARTIGO */
+        .article-hero {
+            background: linear-gradient(160deg, #0F172A 0%, #1A1A2E 100%);
+            border-bottom: 1px solid rgba(16,185,129,0.1);
+            padding: 8rem 0 4rem;
+        }
+        .article-crumbs a { color:rgba(255,255,255,.4); text-decoration:none; font-size:.82rem; }
+        .article-crumbs a:hover { color:var(--esmeralda); }
+        .article-crumbs span { color:rgba(255,255,255,.2); margin:0 .5rem; }
+        .article-tag {
+            display:inline-block;
+            background:rgba(16,185,129,.15);
+            color:var(--esmeralda-light);
+            border-radius:100px;
+            padding:.3rem .9rem;
+            font-size:.75rem;
+            font-weight:700;
+            letter-spacing:.5px;
+            text-transform:uppercase;
+        }
+        .article-hero h1 {
+            font-size:clamp(2rem,5vw,3.2rem);
+            font-weight:800;
+            color:var(--branco);
+            letter-spacing:-1px;
+            line-height:1.15;
+        }
+        .article-hero .lead { color:rgba(255,255,255,.5); font-weight:300; }
+        .author-row { display:flex; align-items:center; gap:1rem; padding-top:1.5rem; border-top:1px solid rgba(255,255,255,.07); }
+        .author-avatar-lg {
+            width:44px; height:44px; border-radius:50%;
+            background:linear-gradient(135deg,var(--esmeralda),var(--esmeralda-deeper));
+            display:flex; align-items:center; justify-content:center;
+            font-weight:800; color:white; font-size:1rem; flex-shrink:0;
+        }
+        .author-name { font-weight:700; color:var(--branco); font-size:.9rem; }
+        .author-meta { font-size:.78rem; color:rgba(255,255,255,.35); }
+
+        /* ARTICLE BODY */
+        .article-section { padding:5rem 0; }
+        .article-cover {
+            width:100%; border-radius:16px;
+            background:linear-gradient(135deg,var(--grafite-light),var(--grafite-mid));
+            height:340px; display:flex; align-items:center; justify-content:center;
+            font-size:5rem; margin-bottom:3rem;
+            border:1px solid rgba(16,185,129,.1);
+        }
+        .article-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 16px;
+        }
+        .article-body p { font-size:1.05rem; line-height:1.85; color:rgba(255,255,255,.7); margin-bottom:1.25rem; }
+        .step-block {
+            background:var(--grafite-mid);
+            border:1px solid rgba(255,255,255,.06);
+            border-radius:16px;
+            padding:2rem;
+            margin:2.5rem 0;
+            position:relative;
+        }
+        .step-block::before {
+            content:'';
+            position:absolute; top:0; left:0; bottom:0;
+            width:4px; background:linear-gradient(to bottom,var(--esmeralda),var(--esmeralda-deeper));
+            border-radius:16px 0 0 16px;
+        }
+        .step-num-inline {
+            display:inline-flex; align-items:center; justify-content:center;
+            width:36px; height:36px; border-radius:10px;
+            background:linear-gradient(135deg,var(--esmeralda),var(--esmeralda-deeper));
+            color:white; font-weight:800; font-size:.9rem;
+            margin-bottom:1rem; font-family:'Syne',sans-serif;
+        }
+        .step-block h2 { color:var(--branco); font-size:1.3rem; font-weight:700; margin-bottom:.75rem; }
+        .step-block p, .step-block li { color:rgba(255,255,255,.6); font-size:.95rem; line-height:1.7; }
+        .step-block ul, .step-block ol { padding-left:1.25rem; }
+        .step-block li { margin-bottom:.5rem; }
+        .step-block strong { color:var(--esmeralda-light); }
+        .highlight-box {
+            background:rgba(16,185,129,.08);
+            border:1px solid rgba(16,185,129,.2);
+            border-radius:12px; padding:1.25rem 1.5rem; margin:1rem 0;
+        }
+        .highlight-box p { color:rgba(255,255,255,.65); margin:0; font-size:.9rem; }
+
+        /* SIDEBAR */
+        .sidebar-sticky { position:sticky; top:6rem; }
+        .sidebar-card {
+            background:var(--grafite-mid);
+            border:1px solid rgba(255,255,255,.06);
+            border-radius:16px; padding:1.5rem;
+            margin-bottom:1.5rem;
+        }
+        .sidebar-card h6 { color:var(--esmeralda-light); font-size:.75rem; letter-spacing:1px; text-transform:uppercase; font-weight:700; margin-bottom:1rem; }
+        .toc-item { display:block; color:rgba(255,255,255,.5); text-decoration:none; font-size:.85rem; padding:.5rem 0; border-bottom:1px solid rgba(255,255,255,.05); transition:color .2s; }
+        .toc-item:last-child { border-bottom:none; }
+        .toc-item:hover { color:var(--esmeralda); }
+        .toc-num { color:var(--esmeralda); font-weight:700; margin-right:.5rem; font-size:.8rem; }
+        .related-post { display:flex; gap:.75rem; align-items:flex-start; padding:.75rem 0; border-bottom:1px solid rgba(255,255,255,.05); }
+        .related-post:last-child { border-bottom:none; }
+        .related-icon { width:44px; height:44px; border-radius:10px; background:var(--grafite-light); display:flex; align-items:center; justify-content:center; font-size:1.2rem; flex-shrink:0; }
+        .related-post a { color:rgba(255,255,255,.7); text-decoration:none; font-size:.85rem; font-weight:600; transition:color .2s; line-height:1.3; }
+        .related-post a:hover { color:var(--esmeralda); }
+        .related-post .small { color:rgba(255,255,255,.3); font-size:.75rem; }
+
+        /* COMMENTS */
+        .comments-section { margin-top:3rem; }
+        .comment-card {
+            background:var(--grafite-mid);
+            border:1px solid rgba(255,255,255,.06);
+            border-radius:16px; padding:1.5rem; margin-bottom:1rem;
+        }
+        .comment-author { font-weight:700; color:var(--branco); font-size:.9rem; }
+        .comment-date { color:rgba(255,255,255,.3); font-size:.75rem; }
+        .comment-text { color:rgba(255,255,255,.55); font-size:.88rem; margin-top:.5rem; }
+        .reply-card {
+            background:var(--grafite-light);
+            border-radius:12px; padding:1.25rem; margin-top:.75rem;
+            border-left:3px solid rgba(16,185,129,.3);
+        }
+        .comment-input {
+            background:var(--grafite-light);
+            border:1px solid rgba(255,255,255,.08);
+            border-radius:12px; color:var(--branco);
+            padding:.9rem 1.1rem; width:100%; font-size:.9rem;
+            font-family:'DM Sans',sans-serif;
+            resize:vertical; transition:border-color .2s;
+        }
+        .comment-input:focus { outline:none; border-color:var(--esmeralda); box-shadow:0 0 0 3px rgba(16,185,129,.1); }
+        .comment-input::placeholder { color:rgba(255,255,255,.2); }
+        .btn-comment {
+            background:linear-gradient(135deg,var(--esmeralda),var(--esmeralda-deeper));
+            border:none; color:white; border-radius:10px;
+            padding:.7rem 1.5rem; font-weight:700; font-family:'Syne',sans-serif;
+            cursor:pointer; transition:all .2s;
+        }
+        .btn-comment:hover { transform:translateY(-1px); box-shadow:0 4px 15px rgba(16,185,129,.3); }
+
+        /* FOOTER */
+        footer { background:#0D0D1A; border-top:1px solid rgba(255,255,255,.06); padding:2rem 0; }
+        footer a { color:rgba(255,255,255,.3); text-decoration:none; transition:color .2s; }
+        footer a:hover { color:var(--esmeralda); }
+
+        /* scrollbar */
+        ::-webkit-scrollbar { width:6px; }
+        ::-webkit-scrollbar-track { background:var(--grafite); }
+        ::-webkit-scrollbar-thumb { background:rgba(16,185,129,.3); border-radius:3px; }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Finanças<span>Claras</span></a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html#guia">Guia</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#investimentos">Investimentos</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#calculadoras">Calculadoras</a></li>
+                <li class="nav-item"><a class="nav-link active" href="index.html#blog">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ARTICLE HERO -->
+<div class="article-hero">
+    <div class="container">
+        <div class="article-crumbs mb-4">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <a href="index.html#blog">Blog</a>
+            <span>/</span>
+            <span style="color:rgba(255,255,255,.5);">5 Passos para Sair das Dívidas</span>
+        </div>
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="mb-3">
+                    <span class="article-tag me-2">Iniciante</span>
+                    <span class="article-tag">Educação Financeira</span>
+                </div>
+                <h1>5 Passos para Sair das Dívidas Este Mês</h1>
+                <p class="lead mt-3">Se o seu objetivo é estancar o sangramento do seu dinheiro e começar a virar o jogo ainda este mês, siga este plano de ação estruturado em 5 passos práticos.</p>
+                <div class="author-row mt-4">
+                    <div class="author-avatar-lg">D</div>
+                    <div>
+                        <div class="author-name">DvD</div>
+                        <div class="author-meta">17 de Maio, 2026 · 6 min de leitura · <i class="bi bi-eye"></i> 1.2k visualizações</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ARTICLE CONTENT -->
+<section class="article-section">
+    <div class="container">
+        <div class="row g-5">
+            <!-- MAIN CONTENT -->
+            <div class="col-lg-8">
+                <div class="article-cover">
+                <img src="./images/DividasBlog.png" alt="💳">
+                </div>
+
+                <div class="article-body">
+                    <p>Viver no vermelho drena sua energia e sua paz. Mas a boa notícia é que, com um método claro e a disposição de encarar a situação de frente, é possível dar a virada ainda este mês. Siga o plano abaixo.</p>
+                </div>
+
+                <div class="step-block">
+                    <div class="step-num-inline">01</div>
+                    <h2>Faça o Mapeamento Real (Encare os Números)</h2>
+                    <p>O primeiro erro de quem está endividado é evitar olhar para o saldo negativo por medo do tamanho do problema. Para resolver uma situação, você precisa conhecê-la a fundo.</p>
+                    <p>Pegue um papel, uma planilha ou abra um documento e liste absolutamente tudo o que você deve:</p>
+                    <ul>
+                        <li>O nome do credor (banco, loja, amigo, etc.)</li>
+                        <li>O valor total atualizado da dívida</li>
+                        <li>A taxa de juros cobrada por mês</li>
+                    </ul>
+                    <div class="highlight-box">
+                        <p>Ao somar tudo, você terá o seu <strong>diagnóstico financeiro</strong>. Saber o tamanho exato do desafio é o que te tira da inércia.</p>
+                    </div>
+                </div>
+
+                <div class="step-block">
+                    <div class="step-num-inline">02</div>
+                    <h2>Defina a Ordem de Prioridade</h2>
+                    <p>Nem todas as dívidas são iguais. Você não deve tentar pagar todas ao mesmo tempo se o dinheiro estiver curto — é preciso ser estratégico:</p>
+                    <ol>
+                        <li><strong>Dívidas com Bens em Garantia:</strong> Financiamentos de carros ou imóveis devem ser priorizados para evitar a perda do bem.</li>
+                        <li><strong>Serviços Essenciais:</strong> Contas de água, luz e gás não podem atrasar, pois o corte afeta diretamente sua sobrevivência.</li>
+                        <li><strong>Juros Mais Altos:</strong> Cartão de crédito e cheque especial são os grandes vilões. Precisam ser atacados o quanto antes.</li>
+                    </ol>
+                </div>
+
+                <div class="step-block">
+                    <div class="step-num-inline">03</div>
+                    <h2>Corte o Supérfluo e Congele Novos Gastos</h2>
+                    <p>Para criar fôlego financeiro, você precisará fazer sacrifícios temporários. Monitore seus gastos diários e corte tudo o que for supérfluo pelas próximas semanas:</p>
+                    <ul>
+                        <li>Assinaturas de streaming que você mal usa</li>
+                        <li>Delivery excessivo e compras por impulso</li>
+                        <li>Saídas caras que podem esperar</li>
+                    </ul>
+                    <div class="highlight-box">
+                        <p><strong>Lembre-se:</strong> não é para sempre, é até você recuperar sua paz. Bloqueie temporariamente os cartões de crédito para evitar a tentação de gerar novas parcelas.</p>
+                    </div>
+                </div>
+
+                <div class="step-block">
+                    <div class="step-num-inline">04</div>
+                    <h2>Negocie Direto com os Credores</h2>
+                    <p>As instituições financeiras têm total interesse em receber, mesmo que com desconto. Entre em contato com os credores sabendo quanto você tem disponível:</p>
+                    <ul>
+                        <li>Peça propostas para quitação à vista — os descontos costumam remover 100% dos juros acumulados.</li>
+                        <li>Se for parcelar, certifique-se de que a parcela cabe com folga no orçamento.</li>
+                        <li>Fique de olho em feirões de negociação (Serasa, mutirões dos bancos) com excelentes condições.</li>
+                    </ul>
+                </div>
+
+                <div class="step-block">
+                    <div class="step-num-inline">05</div>
+                    <h2>Proteja o Próximo Mês (O Começo da Reserva)</h2>
+                    <p>Sair das dívidas é apenas metade do trabalho; a outra metade é garantir que você não volte para elas.</p>
+                    <p>Assim que as parcelas estiverem automatizadas, reorganize seu orçamento com a <strong>regra 50/30/20</strong>:</p>
+                    <div class="highlight-box">
+                        <p><strong>50%</strong> para necessidades essenciais &nbsp;·&nbsp; <strong>30%</strong> para desejos pessoais &nbsp;·&nbsp; <strong>20%</strong> para o seu futuro</p>
+                    </div>
+                    <p>O dinheiro que antes ia para os juros dos bancos agora deve ser carimbado para a sua Reserva de Emergência — garantindo que diante de qualquer imprevisto, você nunca mais precise recorrer a empréstimos.</p>
+                </div>
+
+                <!-- COMMENTS -->
+                <div class="comments-section">
+                    <h4 class="mb-4" style="color:var(--branco);">Discussão <span style="color:rgba(255,255,255,.3);font-size:.85rem;font-weight:400;">(3 comentários)</span></h4>
+
+                    <textarea class="comment-input mb-3" rows="3" placeholder="Junte-se à discussão e deixe um comentário!"></textarea>
+                    <button class="btn-comment mb-4">Publicar comentário <i class="bi bi-send ms-1"></i></button>
+
+                    <div class="comment-card">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <div style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#6366F1,#8B5CF6);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:.85rem;">C</div>
+                            <div>
+                                <div class="comment-author">Carlos Silva</div>
+                                <div class="comment-date">15 de Mai, 2026</div>
+                            </div>
+                        </div>
+                        <div class="comment-text">Esse Passo 1 é o mais difícil de todos. Passei meses ignorando as faturas do cartão com medo de ver o estrago. Só de colocar tudo na ponta do lápis essa semana, parece que tirei um peso enorme das costas. O banco não quer dar desconto no parcelamento, só à vista. O que fazer?</div>
+                        <div class="reply-card">
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <div style="width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,var(--esmeralda),var(--esmeralda-deeper));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:.75rem;">M</div>
+                                <div><div class="comment-author" style="font-size:.85rem;">Mariana Costa</div></div>
+                            </div>
+                            <div class="comment-text">Carlos, passei por isso ano passado! Junta o valor mínimo que conseguiria pagar na parcela e deixa numa conta rendendo. Daqui a uns meses eles costumam mandar propostas melhores no Serasa Limpa Nome. Não desiste!</div>
+                        </div>
+                        <div class="reply-card">
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <div style="width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#F59E0B,#D97706);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:.75rem;">R</div>
+                                <div><div class="comment-author" style="font-size:.85rem;">Ricardo Souza</div></div>
+                            </div>
+                            <div class="comment-text">Boa, Mariana! Os bancos jogam com o cansaço, mas quando veem que você está guardando e querendo negociar de verdade, eles cedem. O segredo é não aceitar parcela abusiva que vai te fazer quebrar o acordo depois.</div>
+                        </div>
+                    </div>
+
+                    <div class="comment-card">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <div style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#EC4899,#BE185D);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:.85rem;">A</div>
+                            <div>
+                                <div class="comment-author">Luiza Rocha</div>
+                                <div class="comment-date">16 de Mai, 2026</div>
+                            </div>
+                        </div>
+                        <div class="comment-text">A regra do 50/30/20 salvou minha vida financeira. No começo achei que ia ser impossível viver com apenas 30% para lazer, mas quando você começa a ver a reserva crescendo todo mês, a sensação de segurança compensa qualquer corte. Excelente artigo!</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SIDEBAR -->
+            <div class="col-lg-4">
+                <div class="sidebar-sticky">
+                    <div class="sidebar-card">
+                        <h6>Índice do Artigo</h6>
+                        <a href="#" class="toc-item"><span class="toc-num">01</span> Mapeamento Real</a>
+                        <a href="#" class="toc-item"><span class="toc-num">02</span> Ordem de Prioridade</a>
+                        <a href="#" class="toc-item"><span class="toc-num">03</span> Corte o Supérfluo</a>
+                        <a href="#" class="toc-item"><span class="toc-num">04</span> Negocie com Credores</a>
+                        <a href="#" class="toc-item"><span class="toc-num">05</span> Proteja o Próximo Mês</a>
+                    </div>
+                    <div class="sidebar-card">
+                        <h6>Artigos Relacionados</h6>
+                        <div class="related-post">
+                            <div class="related-icon">🐷</div>
+                            <div>
+                                <a href="#">Poupança vs. Tesouro Selic vs. CDB</a>
+                                <div class="small mt-1">4 min · Reserva de Emergência</div>
+                            </div>
+                        </div>
+                        <div class="related-post">
+                            <div class="related-icon">🏢</div>
+                            <div>
+                                <a href="#">Aluguéis Sem Ter um Imóvel: FIIs</a>
+                                <div class="small mt-1">10 min · Investimento</div>
+                            </div>
+                        </div>
+                        <div class="related-post">
+                            <div class="related-icon">📊</div>
+                            <div>
+                                <a href="#">Como montar sua carteira do zero</a>
+                                <div class="small mt-1">8 min · Iniciante</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-card" style="background:linear-gradient(135deg,rgba(16,185,129,.15),rgba(16,185,129,.05));border-color:rgba(16,185,129,.2);">
+                        <h6>Calculadora de Reserva</h6>
+                        <p style="color:rgba(255,255,255,.5);font-size:.85rem;margin-bottom:1rem;">Descubra quanto você precisa guardar de reserva de emergência.</p>
+                        <a href="index.html#calculadoras" class="btn-comment d-block text-center text-decoration-none" style="border-radius:10px;padding:.7rem;">Acessar calculadora →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-auto">
+                <span class="fw-bold text-white" style="font-family:'Syne',sans-serif;">Finanças<span style="color:var(--esmeralda);">Claras</span></span>
+                <span class="small ms-3" style="color:rgba(255,255,255,.3);">© 2026</span>
+            </div>
+            <div class="col-auto">
+                <a href="#" class="me-3 small">Privacidade</a>
+                <a href="#" class="me-3 small">Termos</a>
+                <a href="#" class="small">Contato</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,301 +1,1235 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Financas</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body class="d-flex flex-column h-100">
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-dark sticky-top navbar-custom-fim">
-                <div class="container px-5">
-                    <a class="navbar-brand" href="index.html">Nome do Site</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about.html">Sobre</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contato</a></li>
-                            <li class="nav-item"><a class="nav-link" href="pricing.html">Preços</a></li>
-                            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-                                    <li><a class="dropdown-item" href="blog-home.html">Blog Home</a></li>
-                                    <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
-                                    <li><a class="dropdown-item" href="portfolio-overview.html">Portfolio Overview</a></li>
-                                    <li><a class="dropdown-item" href="portfolio-item.html">Portfolio Item</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>FinançasClaras — Domine seu Dinheiro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+    <style>
+        :root {
+            --esmeralda: #10B981;
+            --esmeralda-dark: #059669;
+            --esmeralda-deeper: #047857;
+            --esmeralda-light: #6EE7B7;
+            --esmeralda-glow: rgba(16,185,129,0.15);
+            --grafite: #1A1A2E;
+            --grafite-mid: #252540;
+            --grafite-light: #2E2E50;
+            --cinza: #6B7280;
+            --cinza-claro: #F3F4F6;
+            --branco: #FFFFFF;
+            --texto: #E5E7EB;
+        }
 
-            <header class="header-custom-fim d-flex align-items-center">
-                <div class="container px-5 mt-5"> 
-                    <div class="row gx-5 align-items-center justify-content-start">
-                        <div class="col-lg-6 col-xl-7 col-xxl-6">
-                            <div class="my-5 text-start">
-                                <h1 class="display-5 fw-bolder text-white mb-2">Domine suas finanças.</h1>
-                                <h1 class="display-5 fw-bolder text-white mb-2">Invista com clareza.</h1>
-                                <p class="lead fw-normal text-white-50 mb-4">Sua jornada para a liberdade financeira começa aqui. Aprenda, simule e cresça.</p>
-                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-start">
-                                    <a class="btn btn-success btn-lg px-4 me-sm-3" href="#features">Comece sua Jornada</a>
-                                    <a class="btn btn-outline-light btn-lg px-4" href="#!">Baixe nossa planilha gratuita</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            
-            <section class="py-5" id="termometro-financeiro">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-8 col-xl-6">
-                            <div class="text-center mb-5">
-                                <h2 class="fw-bolder">Qual é o seu momento financeiro atual?</h2>
-                                <p class="lead fw-normal text-muted">Identifique seu perfil no nosso termômetro e acesse o guia ideal para o seu momento.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="row g-4">
-                        
-                        <div class="col-12 col-md-6 col-lg-3">
-                            <div class="card h-100 shadow-sm border-0 bg-light">
-                                <div class="card-body d-flex flex-column">
-                                    <span class="badge bg-danger bg-gradient align-self-start mb-2">Nível 1: Iniciante</span>
-                                    <h5 class="card-title fw-bold">Saindo do Vermelho</h5>
-                                    <p class="card-text text-muted small flex-grow-1">Para quem está renegociando dívidas, cortando gastos desnecessários e tentando organizar as contas básicas do mês.</p>
-                                    <a href="#" class="btn btn-outline-danger btn-sm mt-3">Ver meu guia</a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-12 col-md-6 col-lg-3">
-                            <div class="card h-100 shadow-sm border-0 bg-light">
-                                <div class="card-body d-flex flex-column">
-                                    <span class="badge bg-warning text-dark bg-gradient align-self-start mb-2">Nível 2: Poupador</span>
-                                    <h5 class="card-title fw-bold">Construindo Segurança</h5>
-                                    <p class="card-text text-muted small flex-grow-1">As contas já estão equilibradas, mas falta criar o colchão financeiro (reserva de emergência) para imprevistos.</p>
-                                    <a href="#" class="btn btn-outline-warning btn-sm mt-3 text-dark">Ver meu guia</a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-12 col-md-6 col-lg-3">
-                            <div class="card h-100 shadow-sm border-0 bg-light">
-                                <div class="card-body d-flex flex-column">
-                                    <span class="badge bg-info text-dark bg-gradient align-self-start mb-2">Nível 3: Investidor</span>
-                                    <h5 class="card-title fw-bold">Primeiros Passos</h5>
-                                    <p class="card-text text-muted small flex-grow-1">Para quem já guardou dinheiro e quer sair da poupança, explorando títulos seguros como Tesouro Direto e CDBs.</p>
-                                    <a href="#" class="btn btn-outline-info btn-sm mt-3 text-dark">Ver meu guia</a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-12 col-md-6 col-lg-3">
-                            <div class="card h-100 shadow-sm border-0 bg-light">
-                                <div class="card-body d-flex flex-column">
-                                    <span class="badge bg-success bg-gradient align-self-start mb-2">Nível 4: Avançado</span>
-                                    <h5 class="card-title fw-bold">Multiplicando Patrimônio</h5>
-                                    <p class="card-text text-muted small flex-grow-1">Para quem já domina a renda fixa e quer começar a montar uma carteira focada em dividendos, ações e fundos imobiliários.</p>
-                                    <a href="#" class="btn btn-outline-success btn-sm mt-3">Ver meu guia</a>
-                                </div>
-                            </div>
-                        </div>
+        * { box-sizing: border-box; }
+        
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background-color: var(--grafite);
+            color: var(--texto);
+            overflow-x: hidden;
+        }
 
+        h1, h2, h3, h4, h5, .navbar-brand {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        /* ── NAVBAR ── */
+        .navbar {
+            background: rgba(26,26,46,0.92) !important;
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(16,185,129,0.15);
+            padding: 1rem 0;
+        }
+        .navbar-brand {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--branco) !important;
+            letter-spacing: -0.5px;
+        }
+        .navbar-brand span { color: var(--esmeralda); }
+        .nav-link {
+            color: rgba(255,255,255,0.7) !important;
+            font-weight: 500;
+            transition: color .2s;
+        }
+        .nav-link:hover { color: var(--esmeralda) !important; }
+        .nav-link.active { color: var(--esmeralda) !important; }
+
+        /* ── HERO ── */
+        .hero {
+            min-height: 100vh;
+            background: 
+                radial-gradient(ellipse 80% 60% at 70% 50%, rgba(16,185,129,0.12) 0%, transparent 65%),
+                radial-gradient(ellipse 50% 80% at 10% 90%, rgba(16,185,129,0.07) 0%, transparent 60%),
+                linear-gradient(160deg, #1A1A2E 0%, #0F172A 100%);
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding: 7rem 0 5rem;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2310B981' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            pointer-events: none;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: rgba(16,185,129,0.15);
+            border: 1px solid rgba(16,185,129,0.3);
+            color: var(--esmeralda-light);
+            border-radius: 100px;
+            padding: 0.35rem 1rem;
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+        .hero h1 {
+            font-size: clamp(2.4rem, 5.5vw, 4rem);
+            font-weight: 700;
+            line-height: 1.15;
+            color: var(--branco);
+            letter-spacing: -0.5px;
+        }
+        .hero h1 .highlight {
+            color: var(--esmeralda);
+            position: relative;
+        }
+        .hero p.lead {
+            color: rgba(255,255,255,0.55);
+            font-size: 1.15rem;
+            font-weight: 300;
+            max-width: 500px;
+        }
+        .btn-esmeralda {
+            background: linear-gradient(135deg, var(--esmeralda), var(--esmeralda-deeper));
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 0.8rem 1.8rem;
+            font-weight: 600;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            transition: all .25s;
+            box-shadow: 0 0 20px rgba(16,185,129,0.35);
+        }
+        .btn-esmeralda:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 35px rgba(16,185,129,0.5);
+            color: white;
+        }
+        .btn-outline-esmeralda {
+            background: transparent;
+            color: var(--esmeralda-light);
+            border: 1px solid rgba(16,185,129,0.4);
+            border-radius: 8px;
+            padding: 0.8rem 1.8rem;
+            font-weight: 600;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            transition: all .25s;
+        }
+        .btn-outline-esmeralda:hover {
+            background: rgba(16,185,129,0.1);
+            border-color: var(--esmeralda);
+            color: var(--branco);
+        }
+        .hero-stats {
+            display: flex;
+            gap: 2.5rem;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.08);
+        }
+        .stat-num {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--esmeralda);
+        }
+        .stat-label {
+            font-size: 0.78rem;
+            color: rgba(255,255,255,0.4);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .hero-img-side {
+            position: relative;
+        }
+        .hero-card-float {
+            background: rgba(37,37,64,0.85);
+            border: 1px solid rgba(16,185,129,0.2);
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+            padding: 1.2rem 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .hero-card-float .icon-wrap {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, var(--esmeralda), var(--esmeralda-deeper));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            color: white;
+            flex-shrink: 0;
+        }
+        .card-float-1 { animation: floatY 4s ease-in-out infinite; }
+        .card-float-2 { animation: floatY 4s ease-in-out infinite reverse; }
+        @keyframes floatY {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-12px); }
+        }
+
+        /* ── SECTION TITLES ── */
+        .section-label {
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--esmeralda);
+            margin-bottom: 0.5rem;
+        }
+        .section-title {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            font-weight: 800;
+            color: var(--branco);
+            letter-spacing: -0.5px;
+        }
+        .section-sub {
+            color: rgba(255,255,255,0.45);
+            font-weight: 300;
+            font-size: 1.05rem;
+        }
+
+        /* ── GUIA INICIANTE CARDS ── */
+        .guia-section { padding: 6rem 0; }
+        .nivel-card {
+            background: var(--grafite-mid);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 16px;
+            padding: 1.8rem;
+            height: 100%;
+            transition: all .3s;
+            position: relative;
+            overflow: hidden;
+        }
+        .nivel-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            border-radius: 16px 16px 0 0;
+        }
+        .nivel-card.nivel-1::before { background: #EF4444; }
+        .nivel-card.nivel-2::before { background: #F59E0B; }
+        .nivel-card.nivel-3::before { background: #3B82F6; }
+        .nivel-card.nivel-4::before { background: var(--esmeralda); }
+        .nivel-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(16,185,129,0.3);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        .nivel-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        .nivel-1 .nivel-icon { background: rgba(239,68,68,0.15); color: #EF4444; }
+        .nivel-2 .nivel-icon { background: rgba(245,158,11,0.15); color: #F59E0B; }
+        .nivel-3 .nivel-icon { background: rgba(59,130,246,0.15); color: #3B82F6; }
+        .nivel-4 .nivel-icon { background: rgba(16,185,129,0.15); color: var(--esmeralda); }
+        .nivel-badge {
+            display: inline-block;
+            border-radius: 100px;
+            padding: 0.2rem 0.75rem;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 0.75rem;
+        }
+        .nivel-1 .nivel-badge { background: rgba(239,68,68,0.15); color: #FCA5A5; }
+        .nivel-2 .nivel-badge { background: rgba(245,158,11,0.15); color: #FCD34D; }
+        .nivel-3 .nivel-badge { background: rgba(59,130,246,0.15); color: #93C5FD; }
+        .nivel-4 .nivel-badge { background: rgba(16,185,129,0.15); color: var(--esmeralda-light); }
+        .nivel-card h5 { color: var(--branco); font-weight: 700; font-size: 1.05rem; }
+        .nivel-card p { color: rgba(255,255,255,0.45); font-size: 0.88rem; }
+        .btn-nivel {
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.6);
+            border-radius: 8px;
+            padding: 0.45rem 1rem;
+            font-size: 0.82rem;
+            font-weight: 600;
+            transition: all .2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-nivel:hover {
+            border-color: var(--esmeralda);
+            color: var(--esmeralda-light);
+        }
+
+        /* ── CALCULADORAS ── */
+        .calc-section { padding: 6rem 0; background: var(--grafite-mid); }
+        .calc-wrapper {
+            background: var(--grafite);
+            border: 1px solid rgba(16,185,129,0.2);
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .calc-tabs {
+            display: flex;
+            gap: 0;
+            background: var(--grafite-light);
+            padding: 0.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+        }
+        .calc-tab {
+            flex: 1;
+            text-align: center;
+            padding: 0.65rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: rgba(255,255,255,0.4);
+            transition: all .25s;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            border: none;
+            background: none;
+        }
+        .calc-tab.active {
+            background: linear-gradient(135deg, var(--esmeralda), var(--esmeralda-deeper));
+            color: white;
+            box-shadow: 0 4px 15px rgba(16,185,129,0.3);
+        }
+        .calc-panel { display: none; }
+        .calc-panel.active { display: block; }
+        .calc-label {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: rgba(255,255,255,0.55);
+            letter-spacing: 0.3px;
+            margin-bottom: 0.4rem;
+        }
+        .calc-input {
+            background: var(--grafite-light);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 10px;
+            color: var(--branco);
+            padding: 0.75rem 1rem;
+            width: 100%;
+            font-size: 1rem;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 600;
+            transition: border-color .2s;
+        }
+        .calc-input:focus {
+            outline: none;
+            border-color: var(--esmeralda);
+            box-shadow: 0 0 0 3px rgba(16,185,129,0.1);
+        }
+        .calc-input::placeholder { color: rgba(255,255,255,0.2); }
+        .calc-select {
+            background: var(--grafite-light);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 10px;
+            color: var(--branco);
+            padding: 0.75rem 1rem;
+            width: 100%;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%2310B981' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            cursor: pointer;
+        }
+        .calc-select:focus { outline: none; border-color: var(--esmeralda); }
+        .calc-result-box {
+            background: linear-gradient(135deg, rgba(16,185,129,0.1), rgba(16,185,129,0.05));
+            border: 1px solid rgba(16,185,129,0.25);
+            border-radius: 14px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        .calc-result-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: rgba(255,255,255,0.4);
+            margin-bottom: 0.5rem;
+        }
+        .calc-result-value {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--esmeralda);
+        }
+        .calc-result-sub {
+            font-size: 0.82rem;
+            color: rgba(255,255,255,0.35);
+            margin-top: 0.25rem;
+        }
+        .btn-calcular {
+            background: linear-gradient(135deg, var(--esmeralda), var(--esmeralda-deeper));
+            border: none;
+            color: white;
+            border-radius: 10px;
+            padding: 0.8rem 1.5rem;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 700;
+            width: 100%;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all .25s;
+            box-shadow: 0 4px 15px rgba(16,185,129,0.25);
+        }
+        .btn-calcular:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 8px 25px rgba(16,185,129,0.4);
+        }
+
+        /* ── INVESTIMENTOS ── */
+        .invest-section { padding: 6rem 0; }
+        .invest-card {
+            background: var(--grafite-mid);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 16px;
+            padding: 2rem;
+            height: 100%;
+            transition: all .3s;
+        }
+        .invest-card:hover {
+            border-color: rgba(16,185,129,0.3);
+            transform: translateY(-4px);
+        }
+        .invest-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, rgba(16,185,129,0.2), rgba(16,185,129,0.05));
+            border: 1px solid rgba(16,185,129,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            color: var(--esmeralda);
+            margin-bottom: 1.2rem;
+        }
+        .invest-card h5 { color: var(--branco); font-weight: 700; }
+        .invest-card p { color: rgba(255,255,255,0.45); font-size: 0.9rem; }
+        .invest-tag {
+            display: inline-block;
+            background: rgba(16,185,129,0.1);
+            color: var(--esmeralda-light);
+            border-radius: 6px;
+            padding: 0.2rem 0.6rem;
+            font-size: 0.72rem;
+            font-weight: 700;
+            margin-top: 0.75rem;
+        }
+
+        /* ── MENTIRAS ── */
+        .mentiras-section { padding: 6rem 0; background: var(--grafite-mid); }
+        .mentira-item {
+            background: var(--grafite);
+            border-left: 3px solid #EF4444;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            transition: all .25s;
+        }
+        .mentira-item:hover { transform: translateX(4px); }
+        .mentira-item h6 {
+            color: #FCA5A5;
+            font-weight: 700;
+            font-size: 0.95rem;
+            margin-bottom: 0.4rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .mentira-item p {
+            color: rgba(255,255,255,0.5);
+            font-size: 0.88rem;
+            margin: 0;
+        }
+        .verdade-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: rgba(16,185,129,0.1);
+            border: 1px solid rgba(16,185,129,0.2);
+            color: var(--esmeralda-light);
+            border-radius: 8px;
+            padding: 0.3rem 0.7rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+
+        /* ── BLOG ── */
+        .blog-section { padding: 6rem 0; }
+        .blog-card {
+            background: var(--grafite-mid);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 16px;
+            overflow: hidden;
+            height: 100%;
+            transition: all .3s;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(16,185,129,0.3);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        .blog-img {
+            height: 200px;
+            background: var(--grafite-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .blog-img::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, transparent 40%, var(--grafite-mid));
+        }
+        .blog-body { padding: 1.5rem; }
+        .blog-tag {
+            display: inline-block;
+            background: rgba(16,185,129,0.1);
+            color: var(--esmeralda-light);
+            border-radius: 6px;
+            padding: 0.2rem 0.6rem;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+            margin-bottom: 0.75rem;
+        }
+        .blog-card h5 {
+            color: var(--branco);
+            font-weight: 700;
+            font-size: 1.05rem;
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+        }
+        .blog-card h5 a {
+            color: inherit;
+            text-decoration: none;
+            transition: color .2s;
+        }
+        .blog-card h5 a:hover { color: var(--esmeralda); }
+        .blog-card p { color: rgba(255,255,255,0.45); font-size: 0.85rem; }
+        .blog-footer {
+            padding: 1rem 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .author-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--esmeralda), var(--esmeralda-deeper));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            color: white;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        .blog-meta { font-size: 0.77rem; color: rgba(255,255,255,0.35); }
+        .blog-meta strong { color: rgba(255,255,255,0.6); display: block; }
+
+        /* ── TRILHA / STEPS ── */
+        .trilha-section { padding: 6rem 0; }
+        .step-item {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+            margin-bottom: 2.5rem;
+        }
+        .step-num {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, var(--esmeralda), var(--esmeralda-deeper));
+            color: white;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 800;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            box-shadow: 0 0 20px rgba(16,185,129,0.3);
+        }
+        .step-content h5 { color: var(--branco); font-weight: 700; margin-bottom: 0.4rem; }
+        .step-content p { color: rgba(255,255,255,0.45); font-size: 0.9rem; margin: 0; }
+
+        /* ── NEWSLETTER ── */
+        .newsletter-section {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, var(--esmeralda-deeper) 0%, #064E3B 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .newsletter-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23fff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            pointer-events: none;
+        }
+        .newsletter-input {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 10px;
+            color: white;
+            padding: 0.8rem 1.2rem;
+            font-size: 0.95rem;
+            backdrop-filter: blur(5px);
+        }
+        .newsletter-input::placeholder { color: rgba(255,255,255,0.4); }
+        .newsletter-input:focus { outline: none; border-color: rgba(255,255,255,0.5); background: rgba(255,255,255,0.15); }
+        .btn-newsletter {
+            background: white;
+            color: var(--esmeralda-deeper);
+            border: none;
+            border-radius: 10px;
+            padding: 0.8rem 1.5rem;
+            font-weight: 700;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            white-space: nowrap;
+        }
+        .btn-newsletter:hover { background: var(--esmeralda-light); color: var(--esmeralda-deeper); }
+
+        /* ── FOOTER ── */
+        footer {
+            background: #0D0D1A;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            padding: 2rem 0;
+        }
+        footer .text-muted { color: rgba(255,255,255,0.3) !important; }
+        footer a { color: rgba(255,255,255,0.3); text-decoration: none; transition: color .2s; }
+        footer a:hover { color: var(--esmeralda); }
+
+        /* ── ANIMATIONS ── */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity .5s ease, transform .5s ease;
+        }
+        .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+        /* ── SCROLLBAR ── */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: var(--grafite); }
+        ::-webkit-scrollbar-thumb { background: rgba(16,185,129,0.3); border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--esmeralda); }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Finanças<span>Claras</span></a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                <li class="nav-item"><a class="nav-link" href="#guia">Guia Iniciante</a></li>
+                <li class="nav-item"><a class="nav-link" href="#investimentos">Investimentos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#mentiras">Mitos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#calculadoras">Calculadoras</a></li>
+                <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                <li class="nav-item ms-lg-2">
+                    <a class="btn btn-esmeralda btn-sm px-3" href="#">Planilha Grátis</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="hero-badge">🚀 Educação Financeira do Zero ao Avançado</div>
+                <h1>Domine suas <span class="highlight">finanças</span> e faça seu dinheiro <span class="highlight">trabalhar</span> para você.</h1>
+                <p class="lead mt-4">Aprenda a sair das dívidas, organizar seu orçamento e investir com segurança — do zero ao avançado.</p>
+                <div class="d-flex flex-wrap gap-3 mt-4">
+                    <a href="#guia" class="btn btn-esmeralda">Comece sua Jornada</a>
+                    <a href="#" class="btn btn-outline-esmeralda">Baixe nossa Planilha Gratuita</a>
+                </div>
+                <div class="hero-stats">
+                    <div>
+                        <div class="stat-num">+4k</div>
+                        <div class="stat-label">Leitores</div>
+                    </div>
+                    <div>
+                        <div class="stat-num">100%</div>
+                        <div class="stat-label">Gratuito</div>
+                    </div>
+                    <div>
+                        <div class="stat-num">12+</div>
+                        <div class="stat-label">Artigos</div>
                     </div>
                 </div>
-            </section>
-            <!-- Testimonial section-->
-            <div class="py-5 bg-light">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-10 col-xl-7">
-                            <div class="text-center">
-                                <div class="fs-4 mb-4 fst-italic">"Working with Start Bootstrap templates has saved me tons of development time when building new projects! Starting with a Bootstrap template just makes things easier!"</div>
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
-                                    <div class="fw-bold">
-                                        Tom Ato
-                                        <span class="fw-bold text-primary mx-1">/</span>
-                                        CEO, Pomodoro
-                                    </div>
+            </div>
+            <div class="col-lg-5 offset-lg-1 mt-5 mt-lg-0">
+                <div class="d-flex flex-column gap-3">
+                    <div class="hero-card-float card-float-1">
+                        <div class="icon-wrap"><i class="bi bi-graph-up-arrow"></i></div>
+                        <div>
+                            <div style="color:white;font-weight:700;font-size:.9rem;">Tesouro Selic hoje</div>
+                            <div style="color:var(--esmeralda);font-family:'Syne',sans-serif;font-weight:800;font-size:1.2rem;">+13,75% a.a.</div>
+                        </div>
+                    </div>
+                    <div class="hero-card-float card-float-2 ms-lg-4">
+                        <div class="icon-wrap"><i class="bi bi-shield-check"></i></div>
+                        <div>
+                            <div style="color:white;font-weight:700;font-size:.9rem;">Reserva de emergência</div>
+                            <div style="color:rgba(255,255,255,.5);font-size:.82rem;">3 a 12 meses de custo fixo</div>
+                        </div>
+                    </div>
+                    <div class="hero-card-float card-float-1 ms-lg-2">
+                        <div class="icon-wrap"><i class="bi bi-piggy-bank"></i></div>
+                        <div>
+                            <div style="color:white;font-weight:700;font-size:.9rem;">Regra 50/30/20</div>
+                            <div style="color:rgba(255,255,255,.5);font-size:.82rem;">Necessidades · Desejos · Futuro</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GUIA INICIANTE -->
+<section class="guia-section" id="guia">
+    <div class="container">
+        <div class="row mb-5 fade-up">
+            <div class="col-lg-6">
+                <div class="section-label">Termômetro Financeiro</div>
+                <h2 class="section-title">Qual é o seu momento financeiro?</h2>
+                <p class="section-sub mt-2">Identifique seu nível e acesse o guia ideal para o seu momento.</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-3 fade-up">
+                <div class="nivel-card nivel-1">
+                    <div class="nivel-icon"><i class="bi bi-exclamation-triangle"></i></div>
+                    <div class="nivel-badge">Nível 1</div>
+                    <h5>Saindo do Vermelho</h5>
+                    <p>Renegociando dívidas, cortando gastos e tentando organizar as contas básicas do mês.</p>
+                    <a href="nivel1.html" class="btn-nivel">Ver meu guia →</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 fade-up">
+                <div class="nivel-card nivel-2">
+                    <div class="nivel-icon"><i class="bi bi-piggy-bank"></i></div>
+                    <div class="nivel-badge">Nível 2</div>
+                    <h5>Construindo Segurança</h5>
+                    <p>Contas equilibradas, mas falta criar o colchão financeiro para imprevistos.</p>
+                    <a href="nivel2.html" class="btn-nivel">Ver meu guia →</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 fade-up">
+                <div class="nivel-card nivel-3">
+                    <div class="nivel-icon"><i class="bi bi-bar-chart"></i></div>
+                    <div class="nivel-badge">Nível 3</div>
+                    <h5>Primeiros Passos</h5>
+                    <p>Já guardou dinheiro e quer sair da poupança, explorando Tesouro Direto e CDBs.</p>
+                    <a href="nivel3.html" class="btn-nivel">Ver meu guia →</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 fade-up">
+                <div class="nivel-card nivel-4">
+                    <div class="nivel-icon"><i class="bi bi-buildings"></i></div>
+                    <div class="nivel-badge">Nível 4</div>
+                    <h5>Multiplicando Patrimônio</h5>
+                    <p>Domina a renda fixa e quer montar uma carteira com ações, dividendos e FIIs.</p>
+                    <a href="nivel4.html" class="btn-nivel">Ver meu guia →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CALCULADORAS -->
+<section class="calc-section" id="calculadoras">
+    <div class="container">
+        <div class="row mb-5 fade-up">
+            <div class="col-lg-6">
+                <div class="section-label">Ferramentas</div>
+                <h2 class="section-title">Calculadoras Financeiras</h2>
+                <p class="section-sub mt-2">Simule cenários reais e tome decisões mais inteligentes.</p>
+            </div>
+        </div>
+        <div class="calc-wrapper p-4 p-lg-5 fade-up">
+            <div class="calc-tabs">
+                <button class="calc-tab active" onclick="switchCalc('reserva')"><i class="bi bi-shield me-1"></i> Reserva de Emergência</button>
+                <button class="calc-tab" onclick="switchCalc('juros')"><i class="bi bi-percent me-1"></i> Juros Compostos</button>
+                <button class="calc-tab" onclick="switchCalc('milhao')"><i class="bi bi-trophy me-1"></i> Primeiro Milhão</button>
+            </div>
+
+            <!-- Reserva -->
+            <div id="calc-reserva" class="calc-panel active">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="calc-label">Modelo de trabalho</div>
+                        <select class="calc-select" id="res-modelo">
+                            <option value="clt">CLT (6 meses)</option>
+                            <option value="servidor">Servidor Público (3 meses)</option>
+                            <option value="autonomo">Autônomo / MEI (12 meses)</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="calc-label">Custo Fixo Mensal (R$)</div>
+                        <input type="number" class="calc-input" id="res-custo" placeholder="0,00" />
+                    </div>
+                    <div class="col-md-6">
+                        <div class="calc-label">Quanto você guarda por mês (R$)</div>
+                        <input type="number" class="calc-input" id="res-poupanca" placeholder="0,00" />
+                    </div>
+                    <div class="col-md-6 d-flex align-items-end">
+                        <button class="btn-calcular" onclick="calcReserva()">Calcular <i class="bi bi-calculator ms-1"></i></button>
+                    </div>
+                    <div class="col-12" id="res-result" style="display:none;">
+                        <div class="row g-3 mt-1">
+                            <div class="col-md-4">
+                                <div class="calc-result-box">
+                                    <div class="calc-result-label">Meta da Reserva</div>
+                                    <div class="calc-result-value" id="res-meta">R$ 0</div>
+                                    <div class="calc-result-sub">valor ideal</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="calc-result-box">
+                                    <div class="calc-result-label">Tempo para alcançar</div>
+                                    <div class="calc-result-value" id="res-tempo">0 meses</div>
+                                    <div class="calc-result-sub">guardando sua meta mensal</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="calc-result-box">
+                                    <div class="calc-result-label">Meses de Cobertura</div>
+                                    <div class="calc-result-value" id="res-meses">0</div>
+                                    <div class="calc-result-sub">recomendado para seu perfil</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Blog preview section-->
-            <section class="py-5">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-8 col-xl-6">
-                            <div class="text-center">
-                                <h2 class="fw-bolder">Destaques do nosso blog</h2>
-                                <p class="lead fw-normal text-muted mb-5">Conteúdo prático e descomplicado para você aprender a dominar o seu dinheiro, começar a investir do zero e construir sua liberdade financeira.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row gx-5">
-                        <div class="col-lg-4 mb-5">
-                            <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="images/DividasBlog.png" alt="..." />
-                                <div class="card-body p-4">
-                                    <div class="badge bg-success bg-gradient rounded-pill mb-2">Organização</div>
-                                    <div class="badge bg-success bg-gradient rounded-pill mb-2">Dívidas</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="blog-post.html"><h5 class="card-title mb-3">5 Passos para sair das dívidas este mês</h5></a>
-                                    <p class="card-text mb-0">Viver no vermelho drena sua energia e sua paz. Descubra um plano prático de 5 passos para encarar os números, negociar com credores e recuperar o controle do seu dinheiro ainda este mês.</p>
-                                </div>
-                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                    <div class="d-flex align-items-end justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
-                                            <div class="small">
-                                                <div class="fw-bold">Nome do Autor</div>
-                                                <div class="text-muted">17 de Maio, 2026 &middot; 6 min read</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-5">
-                            <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="images/Porquinho.png" alt="..." />
-                                <div class="card-body p-4">
-                                    <div class="badge bg-success bg-gradient rounded-pill mb-2">Reserva de Emergência</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Poupança vs. Tesouro Selic vs. CDB</h5></a>
-                                    <p class="card-text mb-0">Deixar seu dinheiro parado na poupança é perder para a inflação. Descubra onde construir sua reserva de segurança com rendimento superior, liquidez diária e a proteção que você precisa.</p>
-                                </div>
-                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                    <div class="d-flex align-items-end justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
-                                            <div class="small">
-                                                <div class="fw-bold">Nome do Autor</div>
-                                                <div class="text-muted">17 de Maio, 2026 &middot; 4 min read</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-5">
-                            <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="images/CelularInvest.png" alt="..." />
-                                <div class="card-body p-4">
-                                    <div class="badge bg-success bg-gradient rounded-pill mb-2">Investimento</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Aluguéis Sem Ter um Imóvel: Conheça os FIIs</h5></a>
-                                    <p class="card-text mb-0">Entenda como os Fundos Imobiliários permitem que você se torne sócio de grandes shoppings e prédios comerciais. Invista com pouco dinheiro e comece a receber "aluguéis" mensais isentos de Imposto de Renda.</p>
-                                </div>
-                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                    <div class="d-flex align-items-end justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
-                                            <div class="small">
-                                                <div class="fw-bold">Nome do Autor</div>
-                                                <div class="text-muted">17 de Maio, 2026 &middot; 10 min read</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <section class="py-5" id="features">
-                    <div class="container px-5 my-5">
-                        <div class="row justify-content-center text-center mb-5">
-                            <div class="col-lg-8">
-                                <h2 class="fw-bolder mb-0">Por onde começar?</h2>
-                            </div>
-                        </div>
-                        
-                        <div class="row gx-5 row-cols-1 row-cols-md-2 row-cols-lg-2 justify-content-center">
-                            
-                            <div class="col mb-5 h-100">
-                                <div class="feature bg-success bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
-                                <h2 class="h5 fw-bolder">Passo 1: Faça um diagnóstico sincero</h2>
-                                <p class="mb-0">O primeiro passo é entender para onde vai cada centavo do seu dinheiro. Anote seus gastos fixos e variáveis, encare os números de frente e, se tiver dívidas, priorize descobrir o tamanho exato delas para traçar uma estratégia de quitação.</p>
-                            </div>
-                            
-                            <div class="col mb-5 h-100">
-                                <div class="feature bg-success bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
-                                <h2 class="h5 fw-bolder">Passo 2: Defina seus limites de gastos</h2>
-                                <p class="mb-0">Não se trata de parar de gastar, mas de gastar com inteligência. Monte um planejamento mensal dividindo sua renda (por exemplo, usando a regra dos 50% para necessidades, 30% para estilo de vida e 20% para o futuro) e assuma o controle do seu fluxo de caixa.</p>
-                            </div>
-                            
-                            <div class="col mb-5 mb-lg-0 h-100">
-                                <div class="feature bg-success bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
-                                <h2 class="h5 fw-bolder">Passo 3: Monte sua reserva de emergência</h2>
-                                <p class="mb-0">Quem não sabe para onde vai, qualquer caminho serve. Defina objetivos claros de curto, médio e longo prazo. Sua meta número um deve ser construir uma reserva de emergência — um colchão financeiro equivalente a 3 a 6 meses dos seus custos fixos.</p>
-                            </div>
-                            
-                            <div class="col h-100">
-                                <div class="feature bg-success bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
-                                <h2 class="h5 fw-bolder">Passo 4: Faça o dinheiro trabalho para você</h2>
-                                <p class="mb-0">O jeito mais fácil de poupar é não dar chance para a autossabotagem. Configure uma transferência automática para a sua conta de investimentos logo no dia em que receber seu salário. Comece pela Renda Fixa e crie a consistência que seu futuro precisa.</p>
-                            </div>
-
-                        </div>
+            <!-- Juros Compostos -->
+            <div id="calc-juros" class="calc-panel">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="calc-label">Investimento inicial (R$)</div>
+                        <input type="number" class="calc-input" id="jc-inicial" placeholder="0,00" />
                     </div>
-                </section>
-                    <!-- Call to action-->
-                    <aside class="bg-success bg-gradient rounded-3 p-4 p-sm-5 mt-5">
-                        <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
-                            <div class="mb-4 mb-xl-0">
-                                <div class="fs-3 fw-bold text-white">Novas postagens, entregues para você.</div>
-                                <div class="text-white-50">Se inscreva em nossa newsletter para receber as últimas postagens.</div>
-                            </div>
-                            <div class="ms-xl-4">
-                                <div class="input-group mb-2">
-                                    <input class="form-control" type="text" placeholder="E-mail..." aria-label="Email..." aria-describedby="button-newsletter" />
-                                    <button class="btn btn-outline-light" id="button-newsletter" type="button">Se Inscreva</button>
+                    <div class="col-md-4">
+                        <div class="calc-label">Aporte mensal (R$)</div>
+                        <input type="number" class="calc-input" id="jc-aporte" placeholder="0,00" />
+                    </div>
+                    <div class="col-md-4">
+                        <div class="calc-label">Taxa anual (%)</div>
+                        <input type="number" class="calc-input" id="jc-taxa" placeholder="ex: 13.75" />
+                    </div>
+                    <div class="col-md-6">
+                        <div class="calc-label">Período (anos)</div>
+                        <input type="number" class="calc-input" id="jc-anos" placeholder="ex: 10" />
+                    </div>
+                    <div class="col-md-6 d-flex align-items-end">
+                        <button class="btn-calcular" onclick="calcJuros()">Calcular <i class="bi bi-calculator ms-1"></i></button>
+                    </div>
+                    <div class="col-12" id="jc-result" style="display:none;">
+                        <div class="row g-3 mt-1">
+                            <div class="col-md-4">
+                                <div class="calc-result-box">
+                                    <div class="calc-result-label">Montante Final</div>
+                                    <div class="calc-result-value" id="jc-total">R$ 0</div>
+                                    <div class="calc-result-sub">valor acumulado</div>
                                 </div>
-                                <div class="small text-white-50">Nós nos preocupamos com sua privacidade e nunca compartilharemos seus dados.</div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="calc-result-box">
+                                    <div class="calc-result-label">Total Investido</div>
+                                    <div class="calc-result-value" id="jc-investido">R$ 0</div>
+                                    <div class="calc-result-sub">seu dinheiro</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="calc-result-box">
+                                    <div class="calc-result-label">Juros Ganhos</div>
+                                    <div class="calc-result-value" id="jc-juros">R$ 0</div>
+                                    <div class="calc-result-sub">o dinheiro trabalhando por você</div>
+                                </div>
                             </div>
                         </div>
-                    </aside>
-                </div>
-            </section>
-        </main>
-        <!-- Footer-->
-        <footer class="bg-dark py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Your Website 2023</div></div>
-                    <div class="col-auto">
-                        <a class="link-light small" href="#!">Privacy</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Terms</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Contact</a>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+
+            <!-- Primeiro Milhão -->
+            <div id="calc-milhao" class="calc-panel">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="calc-label">Aporte mensal (R$)</div>
+                        <input type="number" class="calc-input" id="pm-aporte" placeholder="0,00" />
+                    </div>
+                    <div class="col-md-4">
+                        <div class="calc-label">Taxa anual (%)</div>
+                        <input type="number" class="calc-input" id="pm-taxa" placeholder="ex: 13.75" />
+                    </div>
+                    <div class="col-md-4 d-flex align-items-end">
+                        <button class="btn-calcular" onclick="calcMilhao()">Calcular <i class="bi bi-calculator ms-1"></i></button>
+                    </div>
+                    <div class="col-12" id="pm-result" style="display:none;">
+                        <div class="row g-3 mt-1">
+                            <div class="col-md-4">
+                                <div class="calc-result-box">
+                                    <div class="calc-result-label">Tempo até R$ 1 Milhão</div>
+                                    <div class="calc-result-value" id="pm-anos">0 anos</div>
+                                    <div class="calc-result-sub">com aportes mensais</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="calc-result-box">
+                                    <div class="calc-result-label">Total Aportado</div>
+                                    <div class="calc-result-value" id="pm-total">R$ 0</div>
+                                    <div class="calc-result-sub">seu esforço</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="calc-result-box">
+                                    <div class="calc-result-label">Juros Ganhos</div>
+                                    <div class="calc-result-value" id="pm-juros">R$ 0</div>
+                                    <div class="calc-result-sub">o mercado trabalhando pra você</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- INVESTIMENTOS -->
+<section class="invest-section" id="investimentos">
+    <div class="container">
+        <div class="row mb-5 fade-up">
+            <div class="col-lg-6">
+                <div class="section-label">Aprenda a Investir</div>
+                <h2 class="section-title">Como funcionam os investimentos?</h2>
+                <p class="section-sub mt-2">Entenda cada tipo antes de colocar seu dinheiro em qualquer lugar.</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="invest-card">
+                    <div class="invest-icon"><i class="bi bi-bank"></i></div>
+                    <h5>Tesouro Direto</h5>
+                    <p>Você empresta dinheiro para o governo e recebe de volta com juros. É o investimento mais seguro do Brasil — garantido pelo Tesouro Nacional.</p>
+                    <span class="invest-tag">Risco Baixo</span>
+                    <span class="invest-tag ms-1">Iniciante</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="invest-card">
+                    <div class="invest-icon"><i class="bi bi-credit-card-2-front"></i></div>
+                    <h5>CDB (Certificado de Depósito)</h5>
+                    <p>Você empresta dinheiro para um banco e recebe juros. Protegido pelo FGC até R$ 250 mil por instituição.</p>
+                    <span class="invest-tag">Risco Baixo</span>
+                    <span class="invest-tag ms-1">Liquidez Diária</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="invest-card">
+                    <div class="invest-icon"><i class="bi bi-buildings"></i></div>
+                    <h5>FIIs (Fundos Imobiliários)</h5>
+                    <p>Você vira sócio de shoppings, lajes corporativas e galpões. Recebe "aluguéis" mensais isentos de Imposto de Renda.</p>
+                    <span class="invest-tag">Risco Médio</span>
+                    <span class="invest-tag ms-1">Dividendos</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="invest-card">
+                    <div class="invest-icon"><i class="bi bi-graph-up-arrow"></i></div>
+                    <h5>Ações</h5>
+                    <p>Você compra uma fração de uma empresa e se torna sócio. O retorno vem da valorização das ações e dos dividendos pagos.</p>
+                    <span class="invest-tag">Risco Alto</span>
+                    <span class="invest-tag ms-1">Avançado</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="invest-card">
+                    <div class="invest-icon"><i class="bi bi-piggy-bank-fill"></i></div>
+                    <h5>Poupança</h5>
+                    <p>O investimento mais popular do Brasil. Mas atenção: em momentos de inflação alta, você pode estar perdendo poder de compra.</p>
+                    <span class="invest-tag">Risco Baixo</span>
+                    <span class="invest-tag ms-1">⚠️ Rendimento Menor</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-up">
+                <div class="invest-card">
+                    <div class="invest-icon"><i class="bi bi-grid-3x3-gap"></i></div>
+                    <h5>ETFs e Fundos</h5>
+                    <p>Uma cesta de ativos em uma única aplicação. Excelente para diversificar sem precisar escolher ação por ação.</p>
+                    <span class="invest-tag">Risco Médio</span>
+                    <span class="invest-tag ms-1">Diversificação</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MENTIRAS / MITOS -->
+<section class="mentiras-section" id="mentiras">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-5 fade-up">
+                <div class="section-label">🚨 Cuidado</div>
+                <h2 class="section-title">Mentiras que te contam sobre dinheiro</h2>
+                <p class="section-sub mt-3">Desinformação financeira custa caro. Conheça os mitos mais perigosos e proteja seu patrimônio.</p>
+                <div class="mt-4 p-4" style="background:rgba(16,185,129,0.08);border:1px solid rgba(16,185,129,0.2);border-radius:14px;">
+                    <div style="color:var(--esmeralda-light);font-weight:700;font-size:.9rem;margin-bottom:.5rem;">💡 Regra de ouro</div>
+                    <p style="color:rgba(255,255,255,.5);font-size:.88rem;margin:0;">Se alguém promete retorno garantido e alto, sem risco, e pede urgência — é golpe. Sempre.</p>
+                </div>
+            </div>
+            <div class="col-lg-7 fade-up">
+                <div class="mentira-item">
+                    <h6><i class="bi bi-x-circle-fill" style="color:#EF4444;"></i> "Tigrinho / Jogo do Aviator te faz rico"</h6>
+                    <p>Jogos de azar são matematicamente programados para a casa sempre ganhar no longo prazo. A cada R$ 1 apostado, a expectativa é perder dinheiro.</p>
+                    <div class="verdade-badge"><i class="bi bi-check-circle-fill"></i> A verdade: não existe atalho. Enriquecer leva tempo e consistência.</div>
+                </div>
+                <div class="mentira-item">
+                    <h6><i class="bi bi-x-circle-fill" style="color:#EF4444;"></i> "Precisa de muito dinheiro para investir"</h6>
+                    <p>Você pode comprar frações do Tesouro Direto por menos de R$ 30, ou ETFs com R$ 100. O hábito de investir todo mês importa mais que o valor inicial.</p>
+                    <div class="verdade-badge"><i class="bi bi-check-circle-fill"></i> A verdade: R$ 50/mês por 20 anos com 12% a.a. = R$ 49.000+</div>
+                </div>
+                <div class="mentira-item">
+                    <h6><i class="bi bi-x-circle-fill" style="color:#EF4444;"></i> "Bitcoin vai tornar todo mundo milionário"</h6>
+                    <p>Criptomoedas são ativos altamente voláteis e especulativos. Muita gente comprou no topo e perdeu tudo. Nunca invista o que não pode perder.</p>
+                    <div class="verdade-badge"><i class="bi bi-check-circle-fill"></i> A verdade: se for investir, nunca mais que 5% do patrimônio.</div>
+                </div>
+                <div class="mentira-item">
+                    <h6><i class="bi bi-x-circle-fill" style="color:#EF4444;"></i> "Poupança é o investimento mais seguro"</h6>
+                    <p>Segura em relação à perda nominal, mas não à inflação. Em muitos anos, a poupança rende abaixo do IPCA — fazendo seu dinheiro perder poder de compra.</p>
+                    <div class="verdade-badge"><i class="bi bi-check-circle-fill"></i> A verdade: Tesouro Selic tem liquidez diária e rende muito mais.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BLOG -->
+<section class="blog-section" id="blog">
+    <div class="container">
+        <div class="row mb-5 fade-up">
+            <div class="col-lg-6">
+                <div class="section-label">Blog</div>
+                <h2 class="section-title">Destaques do nosso blog</h2>
+                <p class="section-sub mt-2">Conteúdo prático e descomplicado para dominar o seu dinheiro.</p>
+            </div>
+            <div class="col-lg-6 d-flex align-items-end justify-content-lg-end mt-3 mt-lg-0">
+                <a href="#" class="btn btn-outline-esmeralda">Ver todos os artigos →</a>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 fade-up">
+                <div class="blog-card">
+                    <div class="blog-img" style="background:linear-gradient(135deg,#1a1a2e,#2e1a1a);">
+                        <span>💳</span>
+                    </div>
+                    <div class="blog-body">
+                        <div class="blog-tag">Dívidas · Organização</div>
+                        <h5><a href="nivel1.html">5 Passos para Sair das Dívidas Este Mês</a></h5>
+                        <p>Viver no vermelho drena sua energia e sua paz. Descubra um plano prático de 5 passos para encarar os números e recuperar o controle do seu dinheiro.</p>
+                    </div>
+                    <div class="blog-footer">
+                        <div class="author-avatar">A</div>
+                        <div class="blog-meta"><strong>Nome do Autor</strong> 17 Mai 2026 · 6 min</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 fade-up">
+                <div class="blog-card">
+                    <div class="blog-img" style="background:linear-gradient(135deg,#1a1a2e,#1a2e1a);">
+                        <span>🐷</span>
+                    </div>
+                    <div class="blog-body">
+                        <div class="blog-tag">Reserva de Emergência</div>
+                        <h5><a href="#">Poupança vs. Tesouro Selic vs. CDB: onde guardar?</a></h5>
+                        <p>Deixar na poupança é perder para a inflação. Descubra onde construir sua reserva com rendimento superior e liquidez diária.</p>
+                    </div>
+                    <div class="blog-footer">
+                        <div class="author-avatar">A</div>
+                        <div class="blog-meta"><strong>Nome do Autor</strong> 17 Mai 2026 · 4 min</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 fade-up">
+                <div class="blog-card">
+                    <div class="blog-img" style="background:linear-gradient(135deg,#1a2e1a,#1a1a2e);">
+                        <span>🏢</span>
+                    </div>
+                    <div class="blog-body">
+                        <div class="blog-tag">Investimento</div>
+                        <h5><a href="#">Aluguéis Sem Ter um Imóvel: Conheça os FIIs</a></h5>
+                        <p>Entenda como os Fundos Imobiliários permitem que você se torne sócio de shoppings e receba aluguéis mensais isentos de IR.</p>
+                    </div>
+                    <div class="blog-footer">
+                        <div class="author-avatar">A</div>
+                        <div class="blog-meta"><strong>Nome do Autor</strong> 17 Mai 2026 · 10 min</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TRILHA LÓGICA -->
+<section class="trilha-section" id="trilha">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-5 fade-up">
+                <div class="section-label">Trilha Lógica</div>
+                <h2 class="section-title">Por onde começar?</h2>
+                <p class="section-sub mt-3">Uma sequência lógica para organizar as finanças e crescer de forma sustentável.</p>
+            </div>
+            <div class="col-lg-6 offset-lg-1 fade-up">
+                <div class="step-item">
+                    <div class="step-num">01</div>
+                    <div class="step-content">
+                        <h5>Faça um diagnóstico sincero</h5>
+                        <p>Anote todos os gastos fixos e variáveis. Encare os números de frente e descubra o tamanho das dívidas para traçar uma estratégia.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">02</div>
+                    <div class="step-content">
+                        <h5>Defina seus limites de gastos</h5>
+                        <p>Use a regra 50/30/20: 50% para necessidades, 30% para estilo de vida e 20% para o seu futuro.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">03</div>
+                    <div class="step-content">
+                        <h5>Monte sua reserva de emergência</h5>
+                        <p>Construa um colchão equivalente a 3–12 meses dos seus custos fixos antes de qualquer investimento.</p>
+                    </div>
+                </div>
+                <div class="step-item" style="margin-bottom:0;">
+                    <div class="step-num">04</div>
+                    <div class="step-content">
+                        <h5>Faça o dinheiro trabalhar por você</h5>
+                        <p>Configure aportes automáticos no dia que receber seu salário. Comece pela Renda Fixa e crie consistência.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter-section">
+    <div class="container">
+        <div class="row align-items-center justify-content-between g-4">
+            <div class="col-lg-6">
+                <h3 class="fw-bold text-white mb-1" style="font-family:'Syne',sans-serif;">Novas postagens, entregues para você.</h3>
+                <p class="text-white-50 mb-0">Inscreva-se para receber as últimas dicas e artigos direto no seu e-mail.</p>
+            </div>
+            <div class="col-lg-5">
+                <div class="input-group">
+                    <input type="email" class="form-control newsletter-input" placeholder="Seu melhor e-mail..." />
+                    <button class="btn btn-newsletter" type="button">Se Inscrever</button>
+                </div>
+                <div class="small text-white-50 mt-2">Nós nos preocupamos com sua privacidade. Sem spam.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-auto">
+                <span class="fw-bold text-white" style="font-family:'Syne',sans-serif;">Finanças<span style="color:var(--esmeralda);">Claras</span></span>
+                <span class="text-muted small ms-3">© 2026</span>
+            </div>
+            <div class="col-auto">
+                <a href="#" class="me-3 small">Privacidade</a>
+                <a href="#" class="me-3 small">Termos</a>
+                <a href="#" class="small">Contato</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Calc tabs
+function switchCalc(id) {
+
+}
+
+function fmt(n) {
+}
+
+function calcReserva() {
+
+}
+
+function calcJuros() {
+
+}
+
+function calcMilhao() {
+
+}
+
+// Fade on scroll
+const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.12 });
+document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+</script>
+</body>
 </html>
