@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const custoFixo = Number(document.getElementById('res-custo').value);
         const poupancaMensal = Number(document.getElementById('res-poupanca').value);
 
-        if (!custoFixo ||custoFixo <= 0) {
+        if (!custoFixo || custoFixo <= 0) {
             alert('Por favor, insira valores reais para custo fixo.');
             return;
         }
