@@ -74,7 +74,7 @@ Projeto desenvolvido por:
 - Livia Cordeiro  
 - Leonardo  
 - Fernanda Anacledo  
-- Isabelly  
+- Isabely Rodrigues
 - David Wilton  
 
 ---
