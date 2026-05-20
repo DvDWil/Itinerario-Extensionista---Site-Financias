@@ -82,6 +82,7 @@ Projeto desenvolvido por:
 ## 🚀 Status do Projeto
 
 🔧 Em desenvolvimento — estrutura inicial, design e funcionalidades principais já definidos.
+Definindo dominio para financasclaras.dev.br
 
 ---
 
