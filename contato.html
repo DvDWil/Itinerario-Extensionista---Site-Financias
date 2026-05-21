@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Contato — FinançasClaras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Finanças<span>Claras</span></a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                <li class="nav-item"><a class="nav-link" href="index.html#guia">Guia Iniciante</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#investimentos">Investimentos</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#mentiras">Mitos</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#calculadoras">Calculadoras</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#blog">Blog</a></li>
+                <li class="nav-item ms-lg-2">
+                    <a class="btn btn-esmeralda btn-sm px-3" href="#">Planilha Grátis</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="article-hero">
+    <div class="container">
+        <div class="article-crumbs mb-4">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <span style="color:rgba(255,255,255,.5);">Contato</span>
+        </div>
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="mb-3">
+                    <span class="article-tag">Fale Conosco</span>
+                </div>
+                <h1>Entre em Contato</h1>
+                <p class="lead mt-3">Dúvidas, sugestões de pauta, erros no conteúdo ou qualquer outra coisa — adoramos ouvir os leitores.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="article-section">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-7">
+
+                <div style="background:var(--grafite-mid); border:1px solid rgba(16,185,129,0.2); border-radius:16px; padding:2rem;">
+                    <h4 class="mb-4" style="color:var(--branco);">Mande sua mensagem</h4>
+
+                    <div id="form-contato">
+                        <div class="mb-3">
+                            <label style="color:rgba(255,255,255,.6); font-size:.85rem; margin-bottom:.4rem; display:block;">Seu nome</label>
+                            <input id="ct-nome" type="text" placeholder="Como podemos te chamar?" style="width:100%; padding:.75rem 1rem; border-radius:8px; border:1px solid rgba(255,255,255,.1); background:var(--grafite); color:#fff; outline:none; font-family:inherit;" />
+                        </div>
+                        <div class="mb-3">
+                            <label style="color:rgba(255,255,255,.6); font-size:.85rem; margin-bottom:.4rem; display:block;">Seu e-mail <span style="color:rgba(255,255,255,.3); font-size:.8rem;">(para te respondermos)</span></label>
+                            <input id="ct-email" type="email" placeholder="seu@email.com" style="width:100%; padding:.75rem 1rem; border-radius:8px; border:1px solid rgba(255,255,255,.1); background:var(--grafite); color:#fff; outline:none; font-family:inherit;" />
+                        </div>
+                        <div class="mb-3">
+                            <label style="color:rgba(255,255,255,.6); font-size:.85rem; margin-bottom:.4rem; display:block;">Assunto</label>
+                            <select id="ct-assunto" style="width:100%; padding:.75rem 1rem; border-radius:8px; border:1px solid rgba(255,255,255,.1); background:var(--grafite); color:rgba(255,255,255,.7); outline:none; font-family:inherit; cursor:pointer;">
+                                <option value="">Selecione um assunto...</option>
+                                <option value="duvida">Dúvida sobre conteúdo</option>
+                                <option value="erro">Encontrei um erro no site</option>
+                                <option value="sugestao">Sugestão de pauta</option>
+                                <option value="parceria">Proposta de parceria</option>
+                                <option value="dados">Solicitação sobre meus dados (LGPD)</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label style="color:rgba(255,255,255,.6); font-size:.85rem; margin-bottom:.4rem; display:block;">Mensagem</label>
+                            <textarea id="ct-mensagem" rows="5" placeholder="Escreva aqui..." style="width:100%; padding:.75rem 1rem; border-radius:8px; border:1px solid rgba(255,255,255,.1); background:var(--grafite); color:#fff; outline:none; resize:vertical; font-family:inherit;"></textarea>
+                        </div>
+                        <button class="btn-comment" onclick="enviarContato()" style="width:100%; justify-content:center;">
+                            Enviar mensagem <i class="bi bi-send ms-2"></i>
+                        </button>
+                        <p id="ct-status" style="margin-top:1rem; font-size:.85rem; text-align:center; min-height:1.2em;"></p>
+                    </div>
+
+                    <div id="sucesso-contato" style="display:none; text-align:center; padding:2rem 0;">
+                        <div style="font-size:3rem; margin-bottom:1rem;">✅</div>
+                        <h5 style="color:var(--branco);">Mensagem enviada!</h5>
+                        <p style="color:rgba(255,255,255,.6);">Recebemos sua mensagem e vamos responder no e-mail informado em breve. Obrigado pelo contato!</p>
+                        <button onclick="resetContato()" style="background:none; border:1px solid rgba(16,185,129,0.4); color:var(--esmeralda); padding:.5rem 1.5rem; border-radius:8px; cursor:pointer; font-family:inherit; margin-top:.5rem;">Enviar outra mensagem</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 offset-lg-1">
+                <div class="sidebar-sticky">
+
+                    <div class="sidebar-card mb-4">
+                        <h6 style="color:var(--esmeralda); margin-bottom:1rem;">Perguntas frequentes</h6>
+                        <div style="margin-bottom:1.2rem;">
+                            <p style="color:rgba(255,255,255,.9); font-size:.9rem; font-weight:600; margin-bottom:.3rem;">Vocês respondem todos os contatos?</p>
+                            <p style="color:rgba(255,255,255,.5); font-size:.83rem; margin:0;">Tentamos responder todas as mensagens em até 3 dias úteis.</p>
+                        </div>
+                        <div style="margin-bottom:1.2rem;">
+                            <p style="color:rgba(255,255,255,.9); font-size:.9rem; font-weight:600; margin-bottom:.3rem;">Posso sugerir um tema para artigo?</p>
+                            <p style="color:rgba(255,255,255,.5); font-size:.83rem; margin:0;">Sim! Adoramos sugestões dos leitores. Use o assunto "Sugestão de pauta".</p>
+                        </div>
+                        <div>
+                            <p style="color:rgba(255,255,255,.9); font-size:.9rem; font-weight:600; margin-bottom:.3rem;">Vocês oferecem consultoria financeira?</p>
+                            <p style="color:rgba(255,255,255,.5); font-size:.83rem; margin:0;">Não. Somos um site educativo. Para assessoria personalizada, procure um profissional certificado (CFP).</p>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h6 style="color:var(--esmeralda); margin-bottom:1rem;">Outras formas de falar</h6>
+                        <p style="color:rgba(255,255,255,.5); font-size:.85rem;">Por enquanto, o formulário ao lado é o canal oficial. Estamos trabalhando para disponibilizar mais canais em breve.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-auto">
+                <span class="fw-bold text-white">Finanças<span style="color:var(--esmeralda);">Claras</span></span>
+                <span class="small ms-3" style="color:rgba(255,255,255,.3);">© 2026</span>
+            </div>
+            <div class="col-auto">
+                <a href="privacidade.html" class="me-3 small">Privacidade</a>
+                <a href="termos.html" class="me-3 small">Termos</a>
+                <a href="contato.html" class="small" style="color:var(--esmeralda);">Contato</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xnjrprpa';
+
+  async function enviarContato() {
+    const nome     = document.getElementById('ct-nome').value.trim();
+    const email    = document.getElementById('ct-email').value.trim();
+    const assunto  = document.getElementById('ct-assunto').value;
+    const mensagem = document.getElementById('ct-mensagem').value.trim();
+    const status   = document.getElementById('ct-status');
+
+    if (!nome || !email || !assunto || !mensagem) {
+      status.style.color = '#EF4444';
+      status.textContent = 'Por favor, preencha todos os campos antes de enviar.';
+      return;
+    }
+    const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    if (!emailValido) {
+      status.style.color = '#EF4444';
+      status.textContent = 'Digite um e-mail válido.';
+      return;
+    }
+
+    status.style.color = 'var(--esmeralda-light)';
+    status.textContent = 'Enviando...';
+
+    try {
+      const res = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          nome,
+          email,
+          assunto,
+          mensagem,
+          _replyto: email,
+          _subject: `[FinançasClaras] ${assunto} — de ${nome}`
+        })
+      });
+
+      if (res.ok) {
+        document.getElementById('form-contato').style.display = 'none';
+        document.getElementById('sucesso-contato').style.display = 'block';
+      } else {
+        status.style.color = '#EF4444';
+        status.textContent = 'Erro ao enviar. Tente novamente em instantes.';
+      }
+    } catch(e) {
+      status.style.color = '#EF4444';
+      status.textContent = 'Sem conexão. Verifique sua internet e tente novamente.';
+    }
+  }
+
+  function resetContato() {
+    document.getElementById('ct-nome').value = '';
+    document.getElementById('ct-email').value = '';
+    document.getElementById('ct-assunto').value = '';
+    document.getElementById('ct-mensagem').value = '';
+    document.getElementById('ct-status').textContent = '';
+    document.getElementById('sucesso-contato').style.display = 'none';
+    document.getElementById('form-contato').style.display = 'block';
+  }
+</script>
+</body>
+</html>
