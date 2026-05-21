@@ -799,6 +799,7 @@ footer a:hover { color: var(--esmeralda); }
 }
 .toc-item:last-child { border-bottom: none; }
 .toc-item:hover { color: var(--esmeralda); }
+.toc-item.active { color: var(--esmeralda); }
 .toc-num { color: var(--esmeralda); font-weight: 700; margin-right: .5rem; font-size: .8rem; }
 .related-post {
     display: flex; gap: .75rem; align-items: flex-start;
