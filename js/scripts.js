@@ -29,6 +29,26 @@ function avatarLetra(nome) {
 // Este script lê essa variável global quando presente.
 
 // ─────────────────────────────────────────
+//  TAXA SELIC — API Banco Central
+// ─────────────────────────────────────────
+async function atualizarSelic() {
+    const el = document.getElementById('selic-valor');
+    if (!el) return;
+
+    try {
+        // Série 432 = Meta da Taxa Selic definida pelo COPOM (valor mais recente)
+        const res = await fetch('https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados/ultimos/1?formato=json');
+        const dados = await res.json();
+        if (dados && dados[0]) {
+            const taxa = parseFloat(dados[0].valor);
+            el.textContent = `+${taxa.toFixed(2).replace('.', ',')}% a.a.`;
+        }
+    } catch (e) {
+        // Se a API falhar, mantém o valor hardcoded que já está no HTML
+    }
+}
+
+// ─────────────────────────────────────────
 //  RENDERIZAÇÃO DE COMENTÁRIOS
 // ─────────────────────────────────────────
 function renderizarComentarios(dados) {
@@ -255,6 +275,9 @@ window.enviarResposta = async function(comentarioPaiId) {
 //  INICIALIZAÇÃO QUANDO O DOM ESTIVER PRONTO
 // ─────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
+
+    // Atualiza taxa Selic via API do Banco Central
+    atualizarSelic();
 
     // Carrega comentários se a página tiver a seção
     if (document.getElementById('lista-comentarios')) {
