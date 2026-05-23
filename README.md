@@ -92,6 +92,8 @@ Definindo dominio para financasclaras.dev.br
 - CSS3  
 - Bootstrap 5  
 - JavaScript  
+- Supabase
+
 
 ---
 
